@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Transport Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Business Transport</h1>
+        <p>Transport Management System</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#vehicles">Vehicles</a>
+        <a href="#booking">Booking</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home" class="hero">
+        <h2>Reliable Business Transportation</h2>
+        <p>Manage your transport services quickly and easily.</p>
+        <a href="#booking" class="btn">Book Transport</a>
+    </section>
+
+    <section id="vehicles">
+        <h2>Our Transport Services</h2>
+
+        <div class="services">
+            <div class="card">
+                <h3>Truck Transport</h3>
+                <p>Safe and reliable goods delivery.</p>
+            </div>
+
+            <div class="card">
+                <h3>Bus Transport</h3>
+                <p>Comfortable group transportation.</p>
+            </div>
+
+            <div class="card">
+                <h3>Car Transport</h3>
+                <p>Professional business travel services.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking">
+        <h2>Book a Transport Service</h2>
+
+        <form id="bookingForm">
+            <input type="text" id="customer"
+                   placeholder="Customer Name" required>
+
+            <input type="text" id="pickup"
+                   placeholder="Pickup Location" required>
+
+            <input type="text" id="destination"
+                   placeholder="Destination" required>
+
+            <select id="vehicle" required>
+                <option value="">Select Vehicle</option>
+                <option value="Truck">Truck</option>
+                <option value="Bus">Bus</option>
+                <option value="Car">Car</option>
+            </select>
+
+            <input type="number" id="distance"
+                   placeholder="Distance in KM" min="1" required>
+
+            <button type="submit">Calculate & Book</button>
+        </form>
+
+        <div id="result"></div>
+
+        <h3>Booking Records</h3>
+        <div id="bookingList"></div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: deepaksagar23k@gmail.Com</p>
+        <p>Phone: +919568949406</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Business Transport. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
